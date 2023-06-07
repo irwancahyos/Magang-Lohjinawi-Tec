@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* padding-top: 2rem; */
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  /* border: 1px solid black; */
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+nav img {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+
+.nav-logo {
+  display: flex;
+  margin-left: 2rem;
+  width: 10%;
+  /* border: 1px solid black; */
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.navbar .responsive-nav {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: start;
+  width: 70%;
+  padding-left: 5%;
+  align-items: center;
+}
+
+.navbar .responsive-nav .navbar-dropdown {
+  position: absolute;
+  right: 0;
+}
+
+.navbar-dropdown {
+  margin-right: 3rem;
+}
+
+.navbar-input input {
+  border: 1px solid orange;
+  width: 100%;
+}
+
+.navbar-input .input-width {
+  width: 30rem;
+}
+
+.navbar-input button {
+  border: 1px solid orange;
+}
+
+.nav-logo p {
+  font-weight: bold;
+  margin-left: 4px;
+  margin-top: 5px;
+}
+
+.navbar-dropdown .dropdown-toggle {
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+/* NAVBAR BAWAH */
+
+.navbar-bawah,
+.list {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  background-color: orange;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  /* position: fixed;
+  z-index: 555; */
+  position: sticky;
+  top: 0;
+  z-index: 777;
+}
+
+.navbar-bawah p a {
+  color: white;
+  text-decoration: none;
+}
+
+#hamburger-menu {
+  display: none;
+}
+.navbar-bawah p {
+  font-weight: bold;
+  color: white;
+  margin-top: 13px;
+}
+
+.navbar-bawah .li-bawah .nav-link {
+  font-weight: bold;
+  color: white;
+}
+
+/* about */
+.about h2 {
+  color: orange;
+}
+
+.about {
+  padding-top: 4.5rem;
+}
+/* akir about */
+
+/* section main */
+
+.main {
+  width: 100%;
+  padding-bottom: -1rem;
+  /* position: relative; */
+  padding-top: 1.7rem;
+}
+
+.main-head {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.main-head h5 {
+  color: orange;
+}
+
+.main-head p {
+  color: grey;
+}
+
+.main-body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-body .card {
+  width: 15rem;
+  border: none;
+  padding: 2rem;
+}
+
+.main-body p,
+.main-body h6 {
+  text-align: center;
+}
+
+.main-body .coret {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.main-middle {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* margin-bottom: 8rem; */
+}
+
+.main-middle .garis-tengah {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 80%;
+}
+
+.main-middle p {
+  width: 20rem;
+  height: 1px;
+  border-bottom: 1px solid orange;
+  opacity: 0.6;
+}
+
+.main-middle .garis-tengah img {
+  width: 2rem;
+  margin-top: -2px;
+  opacity: 0.7;
+}
+
+/* akir section main */
+
+/* kontak */
+#kontak {
+  padding-top: 3.5rem;
+}
+
+#kontak h2 {
+  color: orange;
+}
+
+#kontak textarea {
+  width: 100%;
+}
+/* akir kontak  */
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem 2rem;
+}
+
+footer p {
+  font-weight: lighter;
+}
+
+footer span {
+  margin-left: 5px;
+}
+
+/* akir footer */
+
+/* media queris */
+
+/* laptop */
+@media (max-width: 1366px) {
+  .navbar-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+}
+
+/* tablet */
+@media (max-width: 760px) {
+  .list {
+    display: none;
+    background-color: rgb(255, 165, 0);
+    height: fit-content;
+    position: absolute;
+    padding: 1rem;
+  }
+
+  .list.active {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    /* transition: 3s; */
+  }
+
+  #hamburger-menu {
+    display: block;
+    z-index: 777;
+    position: absolute;
+    right: 1rem;
+    color: white;
+  }
+
+  .navbar-bawah .list .li-bawah {
+    margin-top: 0.8rem;
+  }
+
+  #hamburger-menu:hover {
+    color: wheat;
+  }
+
+  .navbar .responsive-nav {
+    width: 100%;
+  }
+
+  nav {
+    margin-bottom: 2rem;
+  }
+
+  .nav-logo {
+    margin-bottom: 2px;
+  }
+  .about p {
+    text-align: justify;
+  }
+}
+
+/* mobile */
+@media (max-width: 500px) {
+  /* .main-body {
+    /* flex-direction: column; */
+  /* align-items: center; */
+
+  .navbar-dropdown {
+    display: none;
+  }
+
+  .navbar-input {
+    width: 80%;
+  }
+  .most-sell {
+    font-size: 99%;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+
+  .navbar-bawah,
+  .list {
+    top: -2px;
+  }
+}
